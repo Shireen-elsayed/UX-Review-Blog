@@ -1,14 +1,158 @@
 /* Write the code for main section here */
+footer {
+    background-color: black;
+    padding: 70px 20px;
+    color: white;
+    line-height: 1.6;
+    width: 100%;
+}
 
+footer h2::before {
+    content: var(--fa);
+    font-family: "Font Awesome 7 Free";
+    font-size: 25px;
+    color: black;
+    background-color: white;
+    padding: 12px;
+    margin-right: 10px;
+}
+
+.footer {
+    grid-template-areas: "ux" "catg" "let";
+    grid-template-rows: repeat(3, auto);
+}
+
+.review p {
+    margin: 30px 0;
+}
+
+.categories h3 {
+    padding: 20px 0;
+}
+
+.categories ul {
+    list-style-type: none;
+
+    li {
+        padding: 5px 0;
+        font-weight: 400;
+    }
+}
+
+.news h3 {
+    padding: 35px 0 20px;
+}
+
+.hz-line {
+    display: inline-block;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    height: 4px;
+    margin: 20px 0 30px;
+}
+
+form {
+
+    input,
+    button {
+        padding: 8px;
+        margin: 8px 0;
+        font-weight: 600;
+    }
+
+    input {
+        background-color: transparent;
+        color: #A1A1A1;
+        border: 1px solid white;
+        outline: none;
+    }
+
+    .btn-form {
+        background-color: #FFDF20;
+        color: black;
+        box-shadow: -4px -4px 0 0 rgba(0, 0, 0, 0.2) inset;
+    }
+
+    a:hover {
+        cursor: pointer;
+        color: #FFDF20;
+    }
+
+    input:focus {
+        border-color: #FFDF20;
+        color: #dfc116;
+    }
+
+    .btn-form:hover {
+        cursor: pointer;
+        transform: translateY(5px);
+        transition: all 0.3s ease;
+        background-color: #FDC700;
+        box-shadow: 4px 4px 20px rgb(255, 255, 255);
+    }
+
+    .btn-form:active {
+        transform: translate(0);
+    }
+}
+
+
+.copy-right {
+    text-align: center;
+}
+
+.copy-right p {
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.last-links {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#ux {
+    grid-area: ux;
+}
+
+#catg {
+    grid-area: catg;
+}
+
+#let {
+    grid-area: let;
+}
 
 
 /* Media Queries if needed */
 @media (min-width: 576px) {}
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+
+    /* for tablets */
+    .footer {
+        grid-template-areas: "ux ux ux" "catg let let";
+        grid-template-rows: auto 1fr;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .copy-right p {
+        text-align: center;
+    }
+
+    .footer h3 {
+        padding-top: 0px;
+    }
+}
 
 @media (min-width: 992px) {}
 
-@media (min-width: 1200px) {}
+@media (min-width: 1024px) {
+    .footer {
+        grid-template-areas: "ux catg let";
+        grid-template-columns: 1fr auto 1fr;
+        gap: 20px;
+    }
+}
 
 @media (min-width: 1400px) {}

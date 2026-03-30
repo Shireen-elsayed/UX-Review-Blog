@@ -48,4 +48,7 @@
   --border: #e8e8e8;
   --bg: #ffffff;
   --card-bg: #1e2230;
+
+  /* icon -> by using Uni-code */
+  --fa:"\f5ad";
 }
