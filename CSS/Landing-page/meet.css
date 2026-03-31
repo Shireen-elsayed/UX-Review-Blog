@@ -1,13 +1,188 @@
 /* Write the code for main section here */
+.meet-sec {
+    background-color: #FFD230;
+    border: 5px solid black;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    z-index: 20;
+}
 
+.sq1-bck {
+    width: 150px;
+    height: 150px;
+    background-color: #E5BD2B;
+    top: 10px;
+    left: 40px;
+    rotate: 45deg;
+    z-index: -1;
+}
 
+.sq2-bck {
+    width: 150px;
+    height: 150px;
+    background-color: #FFC131;
+    bottom: 0px;
+    right: 40px;
+    rotate: 15deg;
+}
+
+.meet {
+    margin: 50px auto;
+
+    .sm-line {
+        width: 100px;
+        height: 5px;
+        background-color: black;
+        justify-self: center;
+    }
+
+    h4 {
+        margin: 10px;
+        color: #525252;
+    }
+
+}
+
+.sq {
+    transform: translate(30%, -30%);
+    border: 3px solid black;
+    color: white;
+    font-weight: 500;
+}
+
+.square1 {
+    top: 15px;
+    right: 27px;
+    rotate: 15deg;
+    background-color: red;
+}
+
+.square2 {
+    top: 25px;
+    right: 25px;
+    rotate: -15deg;
+    background-color: blue;
+}
+
+.square3 {
+    top: 15px;
+    right: 30px;
+    rotate: 20deg;
+    background-color: blueviolet;
+}
+
+.meet h2 {
+    font-size: 38px;
+    margin: 10px auto;
+}
+
+.meet h3 {
+    font-size: 23px;
+}
+
+.meet .cards {
+    grid-template-areas: "cd-1" "cd-2" "cd-3";
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.meet .card {
+    border: 5px solid black;
+    box-shadow: 5px 5px 0 black;
+    margin: 20px;
+    padding: 20px;
+}
+
+#cd-1 {
+    grid-area: cd-1;
+}
+
+#cd-2 {
+    grid-area: cd-2;
+}
+
+#cd-3 {
+    grid-area: cd-3;
+}
+
+.meet .card:hover {
+    transform: translate(-5px, -5px);
+    transition: all 0.3s ease;
+}
+
+.meet .card img {
+    border: 5px solid black;
+    width: 88px;
+    height: 88px;
+    margin: 7px auto;
+}
+
+.meet .cd-1:hover {
+    h3 {
+        color: red;
+    }
+}
+
+.meet .cd-2:hover {
+    h3 {
+        color: blue;
+    }
+}
+
+.meet .cd-3:hover {
+    h3 {
+        color: blueviolet;
+    }
+}
+
+.meet .icons-card {
+    margin: 22px;
+
+    a {
+        color: white;
+        background-color: black;
+        padding: 10px;
+        margin: 8px;
+        border: 1px solid black;
+    }
+}
+
+.meet .icons-card a:hover {
+    transform: translate(-10px, -10px);
+    transition: all 0.3s ease;
+    box-shadow: 8px 8px 0 black;
+}
+
+.meet .c1:hover {
+    background-color: deepskyblue;
+}
+
+.meet .c2:hover {
+    background-color: dodgerblue;
+}
+
+.meet .c3:hover {
+    background-color: deeppink;
+}
 
 /* Media Queries if needed */
 @media (min-width: 576px) {}
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+    .meet .cards {
+        grid-template-areas: "cd-1 cd-2" "cd-3";
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
 
-@media (min-width: 992px) {}
+@media (min-width: 1024px) {
+    .meet .cards {
+        grid-template-areas: "cd-1 cd-2 cd-3";
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+    }
+}
 
 @media (min-width: 1200px) {}
 

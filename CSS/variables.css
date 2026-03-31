@@ -1,6 +1,7 @@
 /* This file contains all CSS variables that would be used in many places in project */
 
 :root {
+  --spacing:0.25rem;
   --half-rem: 0.5rem;
   --one-rem: 1rem;
   --one-half-rem: 1.5rem;
