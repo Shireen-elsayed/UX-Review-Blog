@@ -5,9 +5,9 @@
 @import url("utilities.css");
 
 /* Import Landing Page CSS Files */
-@import url("landing-page/nav-bar.css");
+@import url("Landing-page/nav-bar.css");
 @import url("Landing-page/articles.css");
 @import url("Landing-page/join.css");
 @import url("Landing-page/hero.css");
 @import url("Landing-page/meet.css");
-@import url("landing-page/footer.css");
+@import url("Landing-page/footer.css");
