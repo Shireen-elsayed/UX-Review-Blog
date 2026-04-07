@@ -242,7 +242,7 @@
   width: 150px;
   height: 150px;
   background-color: #FFDC7D;
-  z-index: 0;
+  z-index: -1;
   rotate: 45deg;
   bottom: 50px;
   right: 40px;
@@ -256,7 +256,7 @@
   height: 150px;
   top: 40px;
   left: 40px;
-  z-index: 0;
+  z-index: -1;
 }
 
 /* ____border&&box-shadow____ */
