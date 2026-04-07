@@ -5,6 +5,7 @@
 *::after {
   box-sizing: border-box;
   transition: all ease 0.3s;
+  line-height: 1.4;
 }
 
 body,
@@ -26,6 +27,7 @@ dd {
 
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: 3px solid black;
 }
 
 ul,

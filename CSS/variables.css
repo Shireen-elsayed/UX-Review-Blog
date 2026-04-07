@@ -51,5 +51,7 @@
   --card-bg: #1e2230;
 
   /* icon -> by using Uni-code */
-  --fa:"\f5ad";
+  --fa-pen:"\f5ad";
+  --fa-watch:"\f04b";
+  --fa-rocket:"\f135";
 }

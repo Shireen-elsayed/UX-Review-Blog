@@ -1,30 +1,10 @@
 /* Write the code for main section here */
 .meet-sec {
     background-color: #FFD230;
-    border: 5px solid black;
     text-align: center;
     width: 100%;
     overflow: hidden;
     z-index: 20;
-}
-
-.sq1-bck {
-    width: 150px;
-    height: 150px;
-    background-color: #E5BD2B;
-    top: 10px;
-    left: 40px;
-    rotate: 45deg;
-    z-index: -1;
-}
-
-.sq2-bck {
-    width: 150px;
-    height: 150px;
-    background-color: #FFC131;
-    bottom: 0px;
-    right: 40px;
-    rotate: 15deg;
 }
 
 .meet {
@@ -44,12 +24,7 @@
 
 }
 
-.sq {
-    transform: translate(30%, -30%);
-    border: 3px solid black;
-    color: white;
-    font-weight: 500;
-}
+
 
 .square1 {
     top: 15px;
