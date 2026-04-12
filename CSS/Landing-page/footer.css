@@ -37,11 +37,8 @@ footer h2::before {
 
 .categories ul {
     list-style-type: none;
-
-    li {
-        padding: 5px 0;
-        font-weight: 400;
-    }
+    gap: 12px;
+    font-weight: bold;
 }
 
 .news h3 {
@@ -57,11 +54,13 @@ footer h2::before {
 }
 
 form {
+
     input,
     button {
         padding: 15px;
         margin: 10px 0;
         font-weight: 600;
+        font-size: 18px;
     }
 
     input {
@@ -94,7 +93,6 @@ form {
         transform: translate(0);
     }
 }
-
 
 .copy-right {
     text-align: center;
@@ -133,6 +131,7 @@ form {
         grid-template-areas: "ux ux ux" "catg let let";
         grid-template-rows: auto 1fr;
         grid-template-columns: 1fr 2fr;
+        font-size: 1.2rem;
     }
 
     .copy-right p {
@@ -148,10 +147,17 @@ form {
 
 @media (min-width: 1024px) {
     .footer {
+        margin: 0 80px;
         grid-template-areas: "ux catg let";
         grid-template-columns: 1fr auto 1fr;
-        gap: 20px;
+        gap: 50px;
     }
+
+
+    .hz-line {
+        width: 90%;
+    }
+
 }
 
 @media (min-width: 1400px) {}

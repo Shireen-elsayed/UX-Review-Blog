@@ -5,17 +5,11 @@
     width: 100%;
     overflow: hidden;
     z-index: 20;
+    border:(2px 0) solid red;
 }
 
 .meet {
     margin: 50px auto;
-
-    .sm-line {
-        width: 100px;
-        height: 5px;
-        background-color: black;
-        justify-self: center;
-    }
 
     h4 {
         margin: 10px;
@@ -152,6 +146,10 @@
 }
 
 @media (min-width: 1024px) {
+    .meet{
+        margin: 0 80px;
+    }
+
     .meet .cards {
         grid-template-areas: "cd-1 cd-2 cd-3";
         grid-template-columns: repeat(3, 1fr);
