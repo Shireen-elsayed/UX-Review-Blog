@@ -1,7 +1,13 @@
 /* Write the code for main section here */
 
-
+.join-sec {
+    padding: 90px 20px 50px;
+    background-color: #F5F5F5;
+    border: 3px solid black;
+    font-weight: 700;
+}
 .join-grid {
+    padding:50px 0 ;
     grid-template-columns: 1fr;
     gap: 50px;
 }
@@ -62,13 +68,6 @@ h4 {
 
 }
 
-.join-sec {
-    padding: 20px;
-    background-color: #F5F5F5;
-    border: 1px solid black;
-    font-weight: 700;
-    /* font-size: 13.5px; */
-}
 
 .rebels {
     padding: 30px;

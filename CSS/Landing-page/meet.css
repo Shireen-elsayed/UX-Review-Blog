@@ -5,7 +5,8 @@
     width: 100%;
     overflow: hidden;
     z-index: 20;
-    border:(2px 0) solid red;
+    padding: 90px 20px 50px;
+    border: 3px solid black;
 }
 
 .meet {
@@ -18,7 +19,11 @@
 
 }
 
-
+.meet .card h3{
+    color: #525252;
+    margin: 0px auto 20px;
+    font-size: 1.2rem;
+}
 
 .square1 {
     top: 15px;
@@ -58,7 +63,7 @@
 .meet .card {
     border: 5px solid black;
     box-shadow: 5px 5px 0 black;
-    margin: 20px;
+    margin: 20px auto;
     padding: 20px;
 }
 

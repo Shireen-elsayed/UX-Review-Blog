@@ -6,19 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="stylesheet" href="./CSS/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&amp;family=Inter:wght@400;600&amp;display=swap"
+        rel="stylesheet">
     <link rel="shortcut icon" href="./Assets/favicon.png" type="image/x-icon">
     <title>UX REview BLOG</title>
 </head>
 
 <body>
-    <header>
-        <nav>
+    <header id="nav-bar">
+        <input type="checkbox" id="menu-toggle">
+        <nav class="nav-bar desktop-nav rounded d-flex justify-between align-center">
+            <a href="#" class="logo">The UX <span>Review</span></a>
+            <ul class="d-flex align-center desktop-ul">
+                <li><a href="#hero">HOME</a></li>
+                <li><a href="#latest">LATEST ARTICLES</a></li>
+                <li><a href="#authors">AUTHORS</a></li>
+                <li><a href="#community">COMMUNITY</a></li>
+            </ul>
+            <a href="#community" class="desktop-btn nav-btn rounded">SUBSCRIBE NOW</a>
 
+            <label for="menu-toggle" class="menu-icon border-box-shadow-blck"><i class="fa-solid fa-bars"></i></label>
         </nav>
+        <div class="overlay"></div>
+
+        <div class="menu-mobile-t d-flex flex-column ">
+            <div class="menu-2lines">
+                <span class="logo ">MENU</span>
+                <label for="menu-toggle" class="close-btn">
+                    <i class="fa-solid fa-xmark"></i>
+                </label>
+            </div>
+            <ul class="d-flex align-left flex-column mobile-ul">
+                <li><a href="#hero">HOME</a></li>
+                <li><a href="#latest">LATEST ARTICLES</a></li>
+                <li><a href="#authors">AUTHORS</a></li>
+                <li><a href="#community">COMMUNITY</a></li>
+            </ul>
+            <a href="#community" class="border-box-shadow-blck btn-mobile">SUBSCRIBE NOW</a>
+        </div>
     </header>
 
     <main>
-        <section class="hero position-relative">
+        <section id="hero" class="hero position-relative">
             <div class="sq-pnk position-absolute"></div>
             <div class="sq-blck position-absolute"></div>
             <div class="hero-container d-grid">
@@ -43,8 +73,14 @@
             </div>
         </section>
 
+        <section id="latest" class="latest">
 
-        <section class="meet-sec position-relative">
+        </section>
+
+
+
+
+        <section id="authors" class="meet-sec position-relative">
             <div class="sq-blck position-absolute"></div>
             <div class="sq-pnk position-absolute"></div>
             <div class="meet ">
@@ -103,7 +139,7 @@
             </div>
         </section>
 
-        <section class="join-sec">
+        <section id="community" class="join-sec">
             <h2 class="text-center">JOIN THE REBELLION</h2>
             <h4 class="text-center">Where rebels gather to change the digital world</h4>
             <span class="sm-line"></span>

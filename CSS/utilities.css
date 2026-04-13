@@ -297,7 +297,13 @@
 
 
 
-
+/* .btn-watch::before {
+  content: var(--fa-watch);
+  font-family: "Font Awesome 7 Free";
+  margin: 5px;
+  color: rgb(0, 0, 0);
+  background-color: transparent;
+} */
 /* .psuedo-element {
   font-family: "Font Awesome 7 Free";
 } */

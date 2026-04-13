@@ -1,6 +1,167 @@
 /* Write the code for main section here */
 
+.nav-bar {
+    font-weight: bold;
+    position: fixed;
+    background-color: #fff;
+    top: 20px;
+    left: 50%;
+    width: 90%;
+    transform: translateX(-50%);
+    border: 3px solid black;
+    padding: 10px 20px;
+    z-index: 997;
+}
 
+#nav-bar .logo {
+    font-size: 2rem;
+    font-family: "Montserrat", sans-serif;
+
+    span {
+        color: #FF6900;
+    }
+}
+
+#nav-bar .desktop-ul {
+    gap: 0.4rem;
+    font-size: 1rem;
+}
+
+#nav-bar ul li:hover {
+    color: #FF6900;
+}
+
+
+
+#nav-bar .nav-btn {
+    /* display: none; */
+    background-color: #FFD15B;
+    font-weight: bold;
+    padding: 5px 10px;
+    font-size: 1.1rem;
+    border-width: 3px;
+    border-radius: 20px;
+}
+
+#nav-bar .nav-btn:hover {
+    transform: translate(5px, 5px);
+    transition: all 0.3s ease;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    border-width: 3px;
+    padding: 3px;
+    margin-right: 20px;
+}
+
+.menu-icon:hover {
+    transform: translateY(-5px);
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    height: 100vh;
+    width: 100vw;
+    pointer-events: none;
+    transition: 0.3s;
+    z-index: 998;
+    cursor: pointer;
+}
+
+.menu-mobile-t {
+    position: fixed;
+    font-weight: bold;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 300px;
+    background-color: #fff;
+    padding: 20px;
+    transition: right 0.3s ease;
+    transform: translateX(100%);
+    z-index: 999;
+    gap: 20px;
+    padding-top: 80px;
+
+}
+
+#menu-toggle:checked~.menu-mobile-t {
+    transform: translateX(0);
+}
+
+#menu-toggle:checked~.overlay {
+    opacity: 1;
+    pointer-events: all;
+    backdrop-filter: blur(3px);
+}
+
+.close-btn {
+    display: inline;
+    border: 3px solid black;
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+}
+.close-btn:hover{
+    color:#FF7A50 ;
+    background-color:#FADEDE ;
+}
+
+
+
+.desktop-btn,
+.desktop-ul {
+    display: none;
+}
+
+.btn-mobile {
+    background-color: #FFD15B;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+}
+
+.btn-mobile::before {
+    content: "\f135";
+    font-family: "Font Awesome 7 Free";
+    padding-right: 5px;
+}
+
+.btn-mobile:hover {
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
+
+.menu-2lines::after,
+.menu-2lines::before {
+    content: "";
+    display: block;
+    background-color: #000;
+    width: 100%;
+    height: 1px;
+    padding: 2px;
+    margin: 7px;
+}
+
+.mobile-ul {
+    gap: 20px;
+    font-size: 17px;
+}
+
+.mobile-ul li:hover {
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
 
 /* Media Queries if needed */
 @media (min-width: 576px) {}
@@ -9,6 +170,29 @@
 
 @media (min-width: 992px) {}
 
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+
+    .desktop-btn,
+    .desktop-ul {
+        display: inline-flex;
+    }
+
+        .menu-mobile-t {
+            transform: translateX(100%);
+        }
+
+    .menu-icon {
+        display: none;
+    }
+
+    #nav-bar ul li:not(:last-child)::after {
+        display: inline-block;
+        content: var(--fa-star);
+        font-family: "Font Awesome 7 Free";
+        font-size: 0.9rem;
+        color: #FFD230;
+        margin-left: 0.2rem;
+    }
+}
 
 @media (min-width: 1400px) {}

@@ -1,9 +1,10 @@
 /* Write the code for main section here */
 .hero {
     background-color: #FFF085;
-    padding: 180px 30px 30px;
+    padding: 150px 30px 30px;
     overflow: hidden;
     z-index: 20;
+    border: 3px solid black;
 }
 
 .hero-container {
@@ -119,6 +120,9 @@
 }
 
 @media (min-width: 1024px) {
+    .hero{
+        padding: 100px 30px 30px;
+    }
     .hero-container {
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
