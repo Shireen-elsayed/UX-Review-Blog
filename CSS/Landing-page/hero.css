@@ -12,14 +12,7 @@
     grid-template-rows: 1fr;
 }
 
-.btn-trending {
-    color: #fff;
-    background-color: #000;
-    rotate: -4deg;
-    font-weight: bold;
-    margin: 20px auto;
-    font-size: 20px;
-}
+
 
 .hero h1 {
     text-shadow: 3px 3px 0px #55502C;

@@ -229,7 +229,7 @@
 =========================== */
 
 .container {
-  width: 80%;
+  width: 90%;
   margin: auto;
 }
 
@@ -294,8 +294,18 @@
   cursor: pointer;
 }
 
+/* trending-fire */
+.btn-trending {
+  color: #fff;
+  background-color: #000;
+  font-weight: bold;
+  margin: 20px auto;
+  font-size: 20px;
+}
 
-
+.top-20 {
+  top: 20px;
+}
 
 /* .btn-watch::before {
   content: var(--fa-watch);
