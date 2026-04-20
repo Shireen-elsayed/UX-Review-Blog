@@ -9,12 +9,12 @@
     width: 90%;
     transform: translateX(-50%);
     border: 3px solid black;
-    padding: 10px 20px;
+    padding: 5px 10px;
     z-index: 997;
 }
 
 #nav-bar .logo {
-    font-size: 2rem;
+    font-size: 1.4rem;
     font-family: "Montserrat", sans-serif;
 
     span {
@@ -52,7 +52,7 @@
 }
 
 .menu-icon {
-    font-size: 30px;
+    font-size: 20px;
     cursor: pointer;
     border-radius: 5px;
     border-width: 3px;
@@ -79,7 +79,7 @@
 
 .menu-mobile-t {
     position: fixed;
-    font-weight: bold;
+    /* font-weight: bold; */
     right: 0;
     top: 0;
     height: 100vh;
@@ -112,9 +112,10 @@
     position: absolute;
     right: 15px;
 }
-.close-btn:hover{
-    color:#FF7A50 ;
-    background-color:#FADEDE ;
+
+.close-btn:hover {
+    color: #FF7A50;
+    background-color: #FADEDE;
 }
 
 
@@ -131,9 +132,10 @@
 }
 
 .btn-mobile::before {
-    content: "\f135";
+    content: var(--fa-rocket);
     font-family: "Font Awesome 7 Free";
     padding-right: 5px;
+    font-weight: 900;
 }
 
 .btn-mobile:hover {
@@ -165,7 +167,18 @@
 /* Media Queries if needed */
 @media (min-width: 576px) {}
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+    #nav-bar .logo {
+        font-size: 2rem;
+    }
+
+    .menu-icon {
+        font-size: 30px;
+    }
+    .nav-bar{
+        padding: 10px 20px;
+    }
+}
 
 @media (min-width: 992px) {}
 
@@ -176,9 +189,9 @@
         display: inline-flex;
     }
 
-        .menu-mobile-t {
-            transform: translateX(100%);
-        }
+    .menu-mobile-t {
+        transform: translateX(100%);
+    }
 
     .menu-icon {
         display: none;

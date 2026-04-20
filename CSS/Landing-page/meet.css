@@ -5,7 +5,7 @@
     width: 100%;
     overflow: hidden;
     z-index: 20;
-    padding: 90px 20px 50px;
+    padding: 50px 0;
     border: 3px solid black;
 }
 
@@ -20,7 +20,7 @@
 }
 
 .meet .card h3{
-    color: #525252;
+    /* color: #525252; */
     margin: 0px auto 20px;
     font-size: 1.2rem;
 }
@@ -47,13 +47,10 @@
 }
 
 .meet h2 {
-    font-size: 38px;
+    font-size: 1.5rem;
     margin: 10px auto;
 }
 
-.meet h3 {
-    font-size: 23px;
-}
 
 .meet .cards {
     grid-template-areas: "cd-1" "cd-2" "cd-3";
@@ -152,8 +149,8 @@
 }
 
 @media (min-width: 1024px) {
-    .meet{
-        margin: 0 80px;
+.meet h2 {
+        font-size: 38px;
     }
 
     .meet .cards {

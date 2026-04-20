@@ -1,7 +1,7 @@
 /* Write the code for main section here */
 
 .join-sec {
-    padding: 90px 20px 50px;
+    padding: 50px 0;
     background-color: #F5F5F5;
     border: 3px solid black;
     font-weight: 700;
@@ -11,11 +11,16 @@
     grid-template-columns: 1fr;
     gap: 50px;
 }
-
+.join-sec .speaker-text h3{
+    font-size: 16px;
+}
 .join-sec h2 {
-    font-size: 38px;
+    font-size: 40px;
     margin: 10px auto;
 }
+/* .join-sec p{
+    font-size: 1rem;
+} */
 
 h4 {
     margin: 10px;
@@ -49,10 +54,10 @@ h4 {
     }
 }
 
-.saying-h {
+/* .saying-h {
     font-weight: bold;
     font-size: clamp(1.3rem, 3vw, 2rem);
-}
+} */
 
 .join-btn {
     color: #fff;
@@ -123,7 +128,7 @@ h4 {
 
 @media (min-width: 1024px) {
     .join-grid {
-        margin: 0 80px;
+        /* margin: 0 80px; */
         grid-template-columns: repeat(2, minmax(auto, 1fr));
     }
 }

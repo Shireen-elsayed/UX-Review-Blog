@@ -1,7 +1,7 @@
 /* Write the code for main section here */
 .hero {
     background-color: #FFF085;
-    padding: 150px 30px 30px;
+    padding: 150px 0 30px;
     overflow: hidden;
     z-index: 20;
     border: 3px solid black;
@@ -74,8 +74,7 @@
 }
 
 .p2 {
-
-    margin-top: 40px;
+    margin:40px 20px;
     height: auto;
     max-height: 400px;
     transform: rotate(5deg);
@@ -97,13 +96,13 @@
 
 @media (min-width: 768px) {
     .hero-container {
-        margin: 0 50px;
         align-items: center;
     }
 
     .p2 {
         height: 400px;
         max-height: 450px;
+        margin-left: 20px;
     }
 
     .buttons {
@@ -114,12 +113,12 @@
 
 @media (min-width: 1024px) {
     .hero{
-        padding: 100px 30px 30px;
+        padding: 100px 0 30px;
     }
     .hero-container {
         grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-        margin: 0 80px;
+        gap: 30px;
+        /* margin: 0 80px; */
         align-items: center;
     }
 
